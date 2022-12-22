@@ -40,7 +40,7 @@
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.txtEstatura = new System.Windows.Forms.TextBox();
             this.dtFechadenacimiento = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPeso = new System.Windows.Forms.TextBox();
             this.btnGuadar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -50,7 +50,7 @@
             // 
             this.groupBox1.Controls.Add(this.btnCerrar);
             this.groupBox1.Controls.Add(this.btnGuadar);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtPeso);
             this.groupBox1.Controls.Add(this.dtFechadenacimiento);
             this.groupBox1.Controls.Add(this.txtEstatura);
             this.groupBox1.Controls.Add(this.txtNombres);
@@ -163,13 +163,13 @@
             this.dtFechadenacimiento.Size = new System.Drawing.Size(93, 20);
             this.dtFechadenacimiento.TabIndex = 9;
             // 
-            // textBox1
+            // txtPeso
             // 
-            this.textBox1.Location = new System.Drawing.Point(70, 208);
-            this.textBox1.MaxLength = 6;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtPeso.Location = new System.Drawing.Point(70, 208);
+            this.txtPeso.MaxLength = 6;
+            this.txtPeso.Name = "txtPeso";
+            this.txtPeso.Size = new System.Drawing.Size(100, 20);
+            this.txtPeso.TabIndex = 10;
             // 
             // btnGuadar
             // 
@@ -179,6 +179,7 @@
             this.btnGuadar.TabIndex = 11;
             this.btnGuadar.Text = "Guardar";
             this.btnGuadar.UseVisualStyleBackColor = true;
+            this.btnGuadar.Click += new System.EventHandler(this.btnGuadar_Click);
             // 
             // btnCerrar
             // 
@@ -208,7 +209,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnGuadar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.DateTimePicker dtFechadenacimiento;
         private System.Windows.Forms.TextBox txtEstatura;
         private System.Windows.Forms.TextBox txtNombres;

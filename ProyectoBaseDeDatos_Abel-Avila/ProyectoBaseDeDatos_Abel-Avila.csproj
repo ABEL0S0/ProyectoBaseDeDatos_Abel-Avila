@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DATA ACCess OBJECT\Estudiante.cs" />
+    <Compile Include="DATA ACCess OBJECT\EstudianteDAO.cs" />
     <Compile Include="FrmAgregarEstudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
