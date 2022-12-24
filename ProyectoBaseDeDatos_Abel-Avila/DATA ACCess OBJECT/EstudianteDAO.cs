@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Drawing.Text;
 using System.Linq;
@@ -10,20 +11,20 @@ namespace ProyectoBaseDeDatos_Abel_Avila.DATA_ACCess_OBJECT
 {
     public class EstudianteDAO
     {
-        private string cadenadeconexion = @"Server=";//Poner el nombre del servidor
+        private string cadenadeconexion = @"Server = ROBERSON1; database=TIC2022; integrated security=true";//Poner el nombre del servidor
         public int guardar(Estudiante estudiante)
         {
             //Creo la conexion con el motor de base de datos
-            SqlConnection conexion = new SqlConnection(cadenadeconexion);
+            SqlConnection connection = new SqlConnection(cadenadeconexion);
 
             //Creo el comando que guarda los registros en la BDD
-            string sql = "insert into estudiantes(Matricula, Apellidos, Nombres, Estatura, FechaNacimiento, Peso)" +
+            string sql = "insert into estudiantes(Matricula, Apellidos, Nombres, Estatura, FechaNacimiento, Peso) " +
                 "values(@Matricula, @Apellidos, @Nombres, @Estatura, @FechaNacimiento, @Peso)";
-            SqlCommand comando = new SqlCommand();
+            SqlCommand comando = new SqlCommand(sql, connection);
 
             //Abro conexion
-            conexion.Open();
-
+            connection.Open();
+           
             //Agrego los parametros 
             comando.Parameters.Add(new SqlParameter("@Matricula",estudiante.Matricula));
             comando.Parameters.Add(new SqlParameter("@Apellidos", estudiante.Apellidos));
@@ -33,12 +34,32 @@ namespace ProyectoBaseDeDatos_Abel_Avila.DATA_ACCess_OBJECT
             comando.Parameters.Add(new SqlParameter("@Peso", estudiante.Peso));
 
             //Ejecuto el comando (guardar el registro en la BDD)
-            int resultado=comando.ExecuteNonQuery();
+            int resultado = comando.ExecuteNonQuery();
 
             //Cerrar la conexion
-            conexion.Close();
+            connection.Close();
 
             return resultado;
+        }
+        public DataTable getEstudiante(string matricula)
+        {
+            //Creo la conexion con el motor de base de datos
+            SqlConnection connection = new SqlConnection(cadenadeconexion);
+
+            //Creo el comando que busca el registro
+            string sql = "select Matricula, Apellidos, Nombres, Estatura, FechaNacimiento, Peso, FechaCreacion " 
+                + "from Estudiante where Matricula=@Matricula";
+
+            //Declaro un objeto tipo data Table
+            DataTable dt = new DataTable();
+
+            SqlDataAdapter ad = new SqlDataAdapter(sql, connection);
+
+            ad.SelectCommand.Parameters.Add(new SqlParameter("@Matricula", matricula));
+
+            ad.Fill(dt);
+
+            return dt;
         }
     }
 }

@@ -32,11 +32,22 @@ namespace ProyectoBaseDeDatos_Abel_Avila
 
                 ProyectoBaseDeDatos_Abel_Avila.DATA_ACCess_OBJECT.EstudianteDAO objEstudiante =
                     new ProyectoBaseDeDatos_Abel_Avila.DATA_ACCess_OBJECT.EstudianteDAO();
+                //llamo al metodo para guardar el registro
+                int X = objEstudiante.guardar(est);
+                if (X>0)
+                    MessageBox.Show("Estudiante agregado con exito.");
+                else
+                    MessageBox.Show("No se pudo agregar al estudiante.");
             }
             catch(Exception x)
             { MessageBox.Show(x.Message.ToString()); }
             
 
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
