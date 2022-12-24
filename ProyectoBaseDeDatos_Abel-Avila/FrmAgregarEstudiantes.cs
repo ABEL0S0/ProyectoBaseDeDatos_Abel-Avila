@@ -19,6 +19,11 @@ namespace ProyectoBaseDeDatos_Abel_Avila
 
         private void btnGuadar_Click(object sender, EventArgs e)
         {
+            if(this.txtApellidos.TextLength==(0)||this.txtEstatura.TextLength == (0)||this.txtMatricula.TextLength == (0)||this.txtNombres.TextLength == (0)||this.txtPeso.TextLength == (0))
+            {
+                MessageBox.Show("Ingrese los datos en todos los campos");
+                return; 
+            }
             try
             {
                 ProyectoBaseDeDatos_Abel_Avila.DATA_ACCess_OBJECT.Estudiante est =

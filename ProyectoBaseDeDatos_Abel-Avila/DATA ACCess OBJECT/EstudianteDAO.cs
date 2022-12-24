@@ -47,18 +47,22 @@ namespace ProyectoBaseDeDatos_Abel_Avila.DATA_ACCess_OBJECT
             SqlConnection connection = new SqlConnection(cadenadeconexion);
 
             //Creo el comando que busca el registro
-            string sql = "select Matricula, Apellidos, Nombres, Estatura, FechaNacimiento, Peso, FechaCreacion " 
-                + "from Estudiante where Matricula=@Matricula";
+            string sql = "select Matricula, Apellidos, Nombres, Estatura, FechaNacimiento, Peso, FechaDeCreacion " 
+                + "from estudiantes where Matricula=@Matricula";
 
             //Declaro un objeto tipo data Table
             DataTable dt = new DataTable();
 
+            //Declaro un adaptador de datos
             SqlDataAdapter ad = new SqlDataAdapter(sql, connection);
 
+            //Agrego el parametro matricula
             ad.SelectCommand.Parameters.Add(new SqlParameter("@Matricula", matricula));
 
+            //Lleno el datatable dt
             ad.Fill(dt);
 
+            //retorno el datatable dt
             return dt;
         }
     }

@@ -56,6 +56,7 @@
             this.btnBuscar.TabIndex = 0;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnCerrar
             // 
@@ -65,6 +66,7 @@
             this.btnCerrar.TabIndex = 1;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // label1
             // 
@@ -162,6 +164,7 @@
             // 
             this.txtApellidos.Location = new System.Drawing.Point(115, 48);
             this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.ReadOnly = true;
             this.txtApellidos.Size = new System.Drawing.Size(181, 20);
             this.txtApellidos.TabIndex = 6;
             // 
@@ -169,6 +172,7 @@
             // 
             this.txtNombres.Location = new System.Drawing.Point(111, 78);
             this.txtNombres.Name = "txtNombres";
+            this.txtNombres.ReadOnly = true;
             this.txtNombres.Size = new System.Drawing.Size(185, 20);
             this.txtNombres.TabIndex = 7;
             // 
@@ -176,6 +180,7 @@
             // 
             this.txtEstatura.Location = new System.Drawing.Point(111, 110);
             this.txtEstatura.Name = "txtEstatura";
+            this.txtEstatura.ReadOnly = true;
             this.txtEstatura.Size = new System.Drawing.Size(185, 20);
             this.txtEstatura.TabIndex = 8;
             // 
@@ -183,6 +188,7 @@
             // 
             this.txtFechaNacimiento.Location = new System.Drawing.Point(174, 148);
             this.txtFechaNacimiento.Name = "txtFechaNacimiento";
+            this.txtFechaNacimiento.ReadOnly = true;
             this.txtFechaNacimiento.Size = new System.Drawing.Size(202, 20);
             this.txtFechaNacimiento.TabIndex = 9;
             // 
@@ -190,6 +196,7 @@
             // 
             this.txtPeso.Location = new System.Drawing.Point(97, 179);
             this.txtPeso.Name = "txtPeso";
+            this.txtPeso.ReadOnly = true;
             this.txtPeso.Size = new System.Drawing.Size(100, 20);
             this.txtPeso.TabIndex = 10;
             // 
@@ -197,6 +204,7 @@
             // 
             this.txtFechaCreacion.Location = new System.Drawing.Point(163, 214);
             this.txtFechaCreacion.Name = "txtFechaCreacion";
+            this.txtFechaCreacion.ReadOnly = true;
             this.txtFechaCreacion.Size = new System.Drawing.Size(197, 20);
             this.txtFechaCreacion.TabIndex = 11;
             // 
