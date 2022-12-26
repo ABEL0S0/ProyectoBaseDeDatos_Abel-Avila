@@ -179,7 +179,7 @@
             // txtEstatura
             // 
             this.txtEstatura.Location = new System.Drawing.Point(97, 116);
-            this.txtEstatura.MaxLength = 30;
+            this.txtEstatura.MaxLength = 5;
             this.txtEstatura.Name = "txtEstatura";
             this.txtEstatura.Size = new System.Drawing.Size(100, 20);
             this.txtEstatura.TabIndex = 7;
@@ -187,7 +187,7 @@
             // txtPeso
             // 
             this.txtPeso.Location = new System.Drawing.Point(79, 193);
-            this.txtPeso.MaxLength = 30;
+            this.txtPeso.MaxLength = 5;
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Size = new System.Drawing.Size(100, 20);
             this.txtPeso.TabIndex = 8;
