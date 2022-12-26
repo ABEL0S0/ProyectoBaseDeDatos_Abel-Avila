@@ -31,7 +31,12 @@ namespace ProyectoBaseDeDatos_Abel_Avila
 
         private void OpenFile(object sender, EventArgs e)
         {
-           
+            //Declaro frm1 al formulario
+            FrmEliminarEstudiante frm2 = new FrmEliminarEstudiante();
+            //Formulario menu es el contenedor o el formulario padre
+            frm2.MdiParent = this;
+            //Muestra el formulario
+            frm2.Show();
         }
 
         private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -98,6 +103,26 @@ namespace ProyectoBaseDeDatos_Abel_Avila
             {
                 childForm.Close();
             }
+        }
+
+        private void printPreviewToolStripButton_Click(object sender, EventArgs e)
+        {
+            //Declaro frm1 al formulario
+            FrmBusquedaEstudiante frm1 = new FrmBusquedaEstudiante();
+            //Formulario menu es el contenedor o el formulario padre
+            frm1.MdiParent = this;
+            //Muestra el formulario
+            frm1.Show();
+        }
+
+        private void saveToolStripButton_Click(object sender, EventArgs e)
+        {
+            //Declaro frm1 al formulario
+            FrmModificarEstudiantes frm4 = new FrmModificarEstudiantes();
+            //Formulario menu es el contenedor o el formulario padre
+            frm4.MdiParent = this;
+            //Muestra el formulario
+            frm4.Show();
         }
     }
 }

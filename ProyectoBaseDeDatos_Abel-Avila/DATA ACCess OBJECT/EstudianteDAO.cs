@@ -78,12 +78,36 @@ namespace ProyectoBaseDeDatos_Abel_Avila.DATA_ACCess_OBJECT
             connection.Open();
 
             //Agrego los parametros
-            comando.Parameters.Add(new SqlParameter("@Matricuula",matricula));
+            comando.Parameters.Add(new SqlParameter("@Matricula",matricula));
 
             //Ejecuto el comando (elimina el registro en la BDD)
             int resultado=comando.ExecuteNonQuery();
 
             //Cerrar la conexion
+            connection.Close();
+
+            return resultado;
+        }
+        public int actualizar(Estudiante estudiante)
+        {
+            SqlConnection connection=new SqlConnection(cadenadeconexion);
+
+            string sql = "update estudiantes set Apellidos=@Apellidos, Nombres=@Nombres, Estatura=@Estatura, " +
+                "FechaNacimiento=@FechaNacimiento, Peso=@Peso " +
+                "where Matricula=@Matricula";
+            SqlCommand comando = new SqlCommand(sql,connection);
+
+            connection.Open();
+            
+            comando.Parameters.Add(new SqlParameter("@Apellidos", estudiante.Apellidos));
+            comando.Parameters.Add(new SqlParameter("@Nombres", estudiante.Nombres));
+            comando.Parameters.Add(new SqlParameter("@Estatura", estudiante.Estatura));
+            comando.Parameters.Add(new SqlParameter("@FechaNacimiento", estudiante.FechaNacimiento));
+            comando.Parameters.Add(new SqlParameter("@Peso", estudiante.Peso));
+            comando.Parameters.Add(new SqlParameter("@Matricula", estudiante.Matricula));
+
+            int resultado = comando.ExecuteNonQuery();
+
             connection.Close();
 
             return resultado;

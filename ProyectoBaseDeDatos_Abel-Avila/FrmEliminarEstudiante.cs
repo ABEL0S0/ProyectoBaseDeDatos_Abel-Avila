@@ -67,12 +67,23 @@ namespace ProyectoBaseDeDatos_Abel_Avila
                 { MessageBox.Show("Registro eliminado con exito"); }
                 else
                 { MessageBox.Show("No se pudo eliminar el registro"); }
+                this.txtMatricula.Clear();
+                this.txtApellidos.Clear();
+                this.txtNombres.Clear();
+                this.txtEstatura.Clear();
+                this.txtFechaNacimiento.Clear();
+                this.txtPeso.Clear();
             }
             else if (reultado == DialogResult.No)
             {
                 return;
             }
             
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

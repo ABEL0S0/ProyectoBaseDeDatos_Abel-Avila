@@ -1,6 +1,6 @@
 ﻿namespace ProyectoBaseDeDatos_Abel_Avila
 {
-    partial class FrmBusquedaEsturiante
+    partial class FrmBusquedaEstudiante
     {
         /// <summary>
         /// Required designer variable.

@@ -46,8 +46,12 @@ namespace ProyectoBaseDeDatos_Abel_Avila
             }
             catch(Exception x)
             { MessageBox.Show(x.Message.ToString()); }
-            
-
+            this.txtMatricula.Clear();
+            this.txtApellidos.Clear();
+            this.txtNombres.Clear();
+            this.txtEstatura.Clear();
+            this.dtFechadenacimiento.Value = DateTime.Now;
+            this.txtPeso.Clear();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

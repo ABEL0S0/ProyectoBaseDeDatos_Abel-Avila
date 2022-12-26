@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoBaseDeDatos_Abel_Avila
 {
-    public partial class FrmBusquedaEsturiante : Form
+    public partial class FrmBusquedaEstudiante : Form
     {
-        public FrmBusquedaEsturiante()
+        public FrmBusquedaEstudiante()
         {
             InitializeComponent();
         }
@@ -40,11 +40,12 @@ namespace ProyectoBaseDeDatos_Abel_Avila
                 //tarea: mostrar solo 2 decimales
                 this.txtPeso.Text = fila["Peso"].ToString();
                 this.txtFechaCreacion.Text = fila["FechaDeCreacion"].ToString();
-                //tarea: muestre el mensaje adecuado, en caso que el estudiante no exista
+                
             }
+            //tarea: muestre el mensaje adecuado, en caso que el estudiante no exista
             if (this.txtApellidos.TextLength == (0) || this.txtEstatura.TextLength == (0) || this.txtMatricula.TextLength == (0) || this.txtNombres.TextLength == (0) || this.txtPeso.TextLength == (0))
             {
-                MessageBox.Show("El Estudiante buscado no Existe");
+                MessageBox.Show("El Estudiante buscado no Existe","Busqueda No Exitosa");
                 return;
             }
 
