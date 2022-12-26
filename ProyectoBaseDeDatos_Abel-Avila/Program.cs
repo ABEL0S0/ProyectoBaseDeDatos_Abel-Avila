@@ -16,7 +16,7 @@ namespace ProyectoBaseDeDatos_Abel_Avila
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmBusquedaEsturiante());
+            Application.Run(new MenuEstudiantes());
         }
     }
 }

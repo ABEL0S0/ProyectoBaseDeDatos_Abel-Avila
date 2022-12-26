@@ -65,5 +65,28 @@ namespace ProyectoBaseDeDatos_Abel_Avila.DATA_ACCess_OBJECT
             //retorno el datatable dt
             return dt;
         }
+        public int eliminar(string matricula) 
+        {
+            //Creo la conexion con el motor de la base de datos
+            SqlConnection connection = new SqlConnection(cadenadeconexion);
+
+            //Creo el comando que elimina los registros en la BDD
+            string sql = "delete from estudiantes where Matricula=@Matricula";
+            SqlCommand comando= new SqlCommand(sql, connection);
+
+            //Abro la conexion
+            connection.Open();
+
+            //Agrego los parametros
+            comando.Parameters.Add(new SqlParameter("@Matricuula",matricula));
+
+            //Ejecuto el comando (elimina el registro en la BDD)
+            int resultado=comando.ExecuteNonQuery();
+
+            //Cerrar la conexion
+            connection.Close();
+
+            return resultado;
+        }
     }
 }

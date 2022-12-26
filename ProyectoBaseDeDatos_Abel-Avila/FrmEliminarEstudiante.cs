@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoBaseDeDatos_Abel_Avila
 {
-    public partial class FrmBusquedaEsturiante : Form
+    public partial class FrmEliminarEstudiante : Form
     {
-        public FrmBusquedaEsturiante()
+        public FrmEliminarEstudiante()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace ProyectoBaseDeDatos_Abel_Avila
             this.txtApellidos.Clear();
             this.txtNombres.Clear();
             this.txtEstatura.Clear();
-            this.txtFechaNacimiento.Clear() ;            
+            this.txtFechaNacimiento.Clear();
             this.txtPeso.Clear();
             this.txtFechaCreacion.Clear();
             ProyectoBaseDeDatos_Abel_Avila.DATA_ACCess_OBJECT.EstudianteDAO oEst =
@@ -47,12 +47,32 @@ namespace ProyectoBaseDeDatos_Abel_Avila
                 MessageBox.Show("El Estudiante buscado no Existe");
                 return;
             }
-
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult reultado = MessageBox.Show("¿Estas seguro de que quieres eliminar al estudiante?", "Confirmar", MessageBoxButtons.YesNo);
+            if (reultado == DialogResult.Yes)
+            {
+                if(this.txtMatricula.TextLength==(0))
+                {
+                    MessageBox.Show("Busque el estudiante a eliminar", "Busqueda no hecha");
+                    return;
+                }
+                string matricula = this.txtMatricula.Text;
+                ProyectoBaseDeDatos_Abel_Avila.DATA_ACCess_OBJECT.EstudianteDAO oEst 
+                    = new ProyectoBaseDeDatos_Abel_Avila.DATA_ACCess_OBJECT.EstudianteDAO();
+                int x = oEst.eliminar(matricula);
+                if (x > 0) 
+                { MessageBox.Show("Registro eliminado con exito"); }
+                else
+                { MessageBox.Show("No se pudo eliminar el registro"); }
+            }
+            else if (reultado == DialogResult.No)
+            {
+                return;
+            }
+            
         }
     }
 }

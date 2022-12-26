@@ -60,6 +60,18 @@
     <Compile Include="FrmBusquedaEsturiante.Designer.cs">
       <DependentUpon>FrmBusquedaEsturiante.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEliminarEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEliminarEstudiante.Designer.cs">
+      <DependentUpon>FrmEliminarEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuEstudiantes.Designer.cs">
+      <DependentUpon>MenuEstudiantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAgregarEstudiantes.resx">
@@ -67,6 +79,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBusquedaEsturiante.resx">
       <DependentUpon>FrmBusquedaEsturiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEliminarEstudiante.resx">
+      <DependentUpon>FrmEliminarEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEstudiantes.resx">
+      <DependentUpon>MenuEstudiantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
