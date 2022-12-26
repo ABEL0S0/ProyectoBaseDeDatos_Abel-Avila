@@ -164,5 +164,25 @@ namespace ProyectoBaseDeDatos_Abel_Avila
             //Muestra el formulario
             frm4.Show();
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            //Declaro frm1 al formulario
+            FrmAgregarLibro frm5 = new FrmAgregarLibro();
+            //Formulario menu es el contenedor o el formulario padre
+            frm5.MdiParent = this;
+            //Muestra el formulario
+            frm5.Show();
+        }
+
+        private void nuevoLibroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Declaro frm1 al formulario
+            FrmAgregarLibro frm5 = new FrmAgregarLibro();
+            //Formulario menu es el contenedor o el formulario padre
+            frm5.MdiParent = this;
+            //Muestra el formulario
+            frm5.Show();
+        }
     }
 }

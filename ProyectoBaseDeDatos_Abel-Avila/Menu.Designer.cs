@@ -200,6 +200,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton1.Text = "Nuevo Libro";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
             // 
@@ -264,28 +265,29 @@
             // 
             this.nuevoLibroToolStripMenuItem.Image = global::ProyectoBaseDeDatos_Abel_Avila.Properties.Resources.añadir_libro;
             this.nuevoLibroToolStripMenuItem.Name = "nuevoLibroToolStripMenuItem";
-            this.nuevoLibroToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.nuevoLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoLibroToolStripMenuItem.Text = "Nuevo Libro";
+            this.nuevoLibroToolStripMenuItem.Click += new System.EventHandler(this.nuevoLibroToolStripMenuItem_Click);
             // 
             // buscarLibroToolStripMenuItem
             // 
             this.buscarLibroToolStripMenuItem.Image = global::ProyectoBaseDeDatos_Abel_Avila.Properties.Resources.buscar_libro;
             this.buscarLibroToolStripMenuItem.Name = "buscarLibroToolStripMenuItem";
-            this.buscarLibroToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.buscarLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.buscarLibroToolStripMenuItem.Text = "Buscar Libro";
             // 
             // eliminarLibroToolStripMenuItem
             // 
             this.eliminarLibroToolStripMenuItem.Image = global::ProyectoBaseDeDatos_Abel_Avila.Properties.Resources.eliminar_libro;
             this.eliminarLibroToolStripMenuItem.Name = "eliminarLibroToolStripMenuItem";
-            this.eliminarLibroToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.eliminarLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarLibroToolStripMenuItem.Text = "Eliminar Libro";
             // 
             // modificarLibroToolStripMenuItem
             // 
             this.modificarLibroToolStripMenuItem.Image = global::ProyectoBaseDeDatos_Abel_Avila.Properties.Resources.editar_libro;
             this.modificarLibroToolStripMenuItem.Name = "modificarLibroToolStripMenuItem";
-            this.modificarLibroToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.modificarLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modificarLibroToolStripMenuItem.Text = "Modificar Libro";
             // 
             // Menu
