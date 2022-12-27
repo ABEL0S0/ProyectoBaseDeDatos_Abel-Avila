@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtFechaCompra = new System.Windows.Forms.DateTimePicker();
             this.txtFechaCreacion = new System.Windows.Forms.TextBox();
             this.txtUnidades = new System.Windows.Forms.TextBox();
             this.txtPrecioCompra = new System.Windows.Forms.TextBox();
@@ -45,7 +46,6 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
-            this.dtFechaCompra = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +69,14 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del libro";
+            // 
+            // dtFechaCompra
+            // 
+            this.dtFechaCompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtFechaCompra.Location = new System.Drawing.Point(125, 156);
+            this.dtFechaCompra.Name = "dtFechaCompra";
+            this.dtFechaCompra.Size = new System.Drawing.Size(100, 20);
+            this.dtFechaCompra.TabIndex = 24;
             // 
             // txtFechaCreacion
             // 
@@ -189,6 +197,7 @@
             this.btnCerrar.TabIndex = 10;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnBuscar
             // 
@@ -210,14 +219,6 @@
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
-            // 
-            // dtFechaCompra
-            // 
-            this.dtFechaCompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFechaCompra.Location = new System.Drawing.Point(125, 156);
-            this.dtFechaCompra.Name = "dtFechaCompra";
-            this.dtFechaCompra.Size = new System.Drawing.Size(100, 20);
-            this.dtFechaCompra.TabIndex = 24;
             // 
             // FrmModificarLibro
             // 

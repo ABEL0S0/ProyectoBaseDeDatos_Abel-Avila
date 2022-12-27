@@ -89,5 +89,10 @@ namespace ProyectoBaseDeDatos_Abel_Avila
             this.txtCodigoLibro.Text = "0000000000";
             this.btnModificar.Enabled = false;
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();   
+        }
     }
 }
