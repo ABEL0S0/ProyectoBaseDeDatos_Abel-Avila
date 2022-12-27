@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.dtFechaCompra = new System.Windows.Forms.DateTimePicker();
+            this.txtUnidades = new System.Windows.Forms.TextBox();
+            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
+            this.txtAutor = new System.Windows.Forms.TextBox();
+            this.txtNombreLibro = new System.Windows.Forms.TextBox();
+            this.txtCodigoLibro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtCodigoLibro = new System.Windows.Forms.TextBox();
-            this.txtNombreLibro = new System.Windows.Forms.TextBox();
-            this.txtAutor = new System.Windows.Forms.TextBox();
-            this.txtPrecioCompra = new System.Windows.Forms.TextBox();
-            this.txtUnidades = new System.Windows.Forms.TextBox();
-            this.dtFechaCompra = new System.Windows.Forms.DateTimePicker();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +68,75 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingrese Los datos del Libro";
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(315, 281);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(204, 61);
+            this.btnSalir.TabIndex = 13;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(95, 281);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(204, 61);
+            this.btnGuardar.TabIndex = 12;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // dtFechaCompra
+            // 
+            this.dtFechaCompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtFechaCompra.Location = new System.Drawing.Point(103, 203);
+            this.dtFechaCompra.Name = "dtFechaCompra";
+            this.dtFechaCompra.Size = new System.Drawing.Size(92, 20);
+            this.dtFechaCompra.TabIndex = 11;
+            // 
+            // txtUnidades
+            // 
+            this.txtUnidades.Location = new System.Drawing.Point(64, 236);
+            this.txtUnidades.MaxLength = 5;
+            this.txtUnidades.Name = "txtUnidades";
+            this.txtUnidades.Size = new System.Drawing.Size(67, 20);
+            this.txtUnidades.TabIndex = 10;
+            // 
+            // txtPrecioCompra
+            // 
+            this.txtPrecioCompra.Location = new System.Drawing.Point(103, 160);
+            this.txtPrecioCompra.MaxLength = 10;
+            this.txtPrecioCompra.Name = "txtPrecioCompra";
+            this.txtPrecioCompra.Size = new System.Drawing.Size(109, 20);
+            this.txtPrecioCompra.TabIndex = 9;
+            // 
+            // txtAutor
+            // 
+            this.txtAutor.Location = new System.Drawing.Point(44, 129);
+            this.txtAutor.MaxLength = 60;
+            this.txtAutor.Name = "txtAutor";
+            this.txtAutor.Size = new System.Drawing.Size(168, 20);
+            this.txtAutor.TabIndex = 8;
+            // 
+            // txtNombreLibro
+            // 
+            this.txtNombreLibro.Location = new System.Drawing.Point(99, 95);
+            this.txtNombreLibro.MaxLength = 50;
+            this.txtNombreLibro.Name = "txtNombreLibro";
+            this.txtNombreLibro.Size = new System.Drawing.Size(157, 20);
+            this.txtNombreLibro.TabIndex = 7;
+            // 
+            // txtCodigoLibro
+            // 
+            this.txtCodigoLibro.Location = new System.Drawing.Point(95, 65);
+            this.txtCodigoLibro.MaxLength = 10;
+            this.txtCodigoLibro.Name = "txtCodigoLibro";
+            this.txtCodigoLibro.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigoLibro.TabIndex = 6;
+            this.txtCodigoLibro.Text = "0000000000";
             // 
             // label6
             // 
@@ -122,74 +191,6 @@
             this.label1.Size = new System.Drawing.Size(83, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Codigo del Libro";
-            // 
-            // txtCodigoLibro
-            // 
-            this.txtCodigoLibro.Location = new System.Drawing.Point(95, 65);
-            this.txtCodigoLibro.MaxLength = 10;
-            this.txtCodigoLibro.Name = "txtCodigoLibro";
-            this.txtCodigoLibro.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigoLibro.TabIndex = 6;
-            // 
-            // txtNombreLibro
-            // 
-            this.txtNombreLibro.Location = new System.Drawing.Point(99, 95);
-            this.txtNombreLibro.MaxLength = 50;
-            this.txtNombreLibro.Name = "txtNombreLibro";
-            this.txtNombreLibro.Size = new System.Drawing.Size(157, 20);
-            this.txtNombreLibro.TabIndex = 7;
-            // 
-            // txtAutor
-            // 
-            this.txtAutor.Location = new System.Drawing.Point(44, 129);
-            this.txtAutor.MaxLength = 60;
-            this.txtAutor.Name = "txtAutor";
-            this.txtAutor.Size = new System.Drawing.Size(168, 20);
-            this.txtAutor.TabIndex = 8;
-            // 
-            // txtPrecioCompra
-            // 
-            this.txtPrecioCompra.Location = new System.Drawing.Point(103, 160);
-            this.txtPrecioCompra.MaxLength = 10;
-            this.txtPrecioCompra.Name = "txtPrecioCompra";
-            this.txtPrecioCompra.Size = new System.Drawing.Size(109, 20);
-            this.txtPrecioCompra.TabIndex = 9;
-            // 
-            // txtUnidades
-            // 
-            this.txtUnidades.Location = new System.Drawing.Point(64, 236);
-            this.txtUnidades.MaxLength = 5;
-            this.txtUnidades.Name = "txtUnidades";
-            this.txtUnidades.Size = new System.Drawing.Size(67, 20);
-            this.txtUnidades.TabIndex = 10;
-            // 
-            // dtFechaCompra
-            // 
-            this.dtFechaCompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFechaCompra.Location = new System.Drawing.Point(103, 203);
-            this.dtFechaCompra.Name = "dtFechaCompra";
-            this.dtFechaCompra.Size = new System.Drawing.Size(92, 20);
-            this.dtFechaCompra.TabIndex = 11;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(95, 281);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(204, 61);
-            this.btnGuardar.TabIndex = 12;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(315, 281);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(204, 61);
-            this.btnSalir.TabIndex = 13;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FrmAgregarLibro
             // 

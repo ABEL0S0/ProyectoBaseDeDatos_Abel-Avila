@@ -62,6 +62,12 @@
     <Compile Include="FrmAgregarLibro.Designer.cs">
       <DependentUpon>FrmAgregarLibro.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBuscarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarLibro.Designer.cs">
+      <DependentUpon>FrmBuscarLibro.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBusquedaEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAgregarLibro.resx">
       <DependentUpon>FrmAgregarLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarLibro.resx">
+      <DependentUpon>FrmBuscarLibro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBusquedaEstudiante.resx">
       <DependentUpon>FrmBusquedaEstudiante.cs</DependentUpon>

@@ -210,6 +210,7 @@
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton2.Text = "Buscar Libro";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton3
             // 
@@ -275,6 +276,7 @@
             this.buscarLibroToolStripMenuItem.Name = "buscarLibroToolStripMenuItem";
             this.buscarLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.buscarLibroToolStripMenuItem.Text = "Buscar Libro";
+            this.buscarLibroToolStripMenuItem.Click += new System.EventHandler(this.buscarLibroToolStripMenuItem_Click);
             // 
             // eliminarLibroToolStripMenuItem
             // 
