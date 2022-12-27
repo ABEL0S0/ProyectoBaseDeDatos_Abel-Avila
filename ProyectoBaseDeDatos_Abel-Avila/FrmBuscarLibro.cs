@@ -47,7 +47,7 @@ namespace ProyectoBaseDeDatos_Abel_Avila
                 this.txtFechaCreacion.Text = fila["FechaCreacion"].ToString();                
             }
             //tarea: muestre el mensaje adecuado, en caso que el estudiante no exista
-            if (this.txtNombreLibro.TextLength == (0) || this.txtAutor.TextLength == (0) || this.txtFechaCompra.TextLength == (0) || this.txtUnidades.TextLength == (0) || this.txtFechaCreacion.TextLength == (0)|| this.txtCodigoLibro.Text == "0000000000";)
+            if (this.txtNombreLibro.TextLength == (0) || this.txtAutor.TextLength == (0) || this.txtFechaCompra.TextLength == (0) || this.txtUnidades.TextLength == (0) || this.txtFechaCreacion.TextLength == (0)|| this.txtCodigoLibro.Text == "0000000000")
             {
                 MessageBox.Show("El Libro buscado no Existe");
                 return;

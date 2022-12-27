@@ -24,7 +24,7 @@ namespace ProyectoBaseDeDatos_Abel_Avila
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (this.txtCodigoLibro.TextLength == (0) || this.txtNombreLibro.TextLength == (0) || this.txtPrecioCompra.TextLength == (0) || this.txtUnidades.TextLength == (0) || this.txtAutor.TextLength == (0))
+            if (this.txtCodigoLibro.TextLength == (0) || this.txtNombreLibro.TextLength == (0) || this.txtPrecioCompra.TextLength == (0) || this.txtUnidades.TextLength == (0) || this.txtAutor.TextLength == (0) || this.txtCodigoLibro.Text == "0000000000")
             {
                 MessageBox.Show("Ingrese los datos en todos los campos");
                 return;
@@ -51,12 +51,13 @@ namespace ProyectoBaseDeDatos_Abel_Avila
             }
             catch (Exception x)
             { MessageBox.Show(x.Message.ToString()); }
-            this.txtCodigoLibro.Clear();
+           
             this.txtNombreLibro.Clear();
             this.txtAutor.Clear();
             this.txtPrecioCompra.Clear();
             this.dtFechaCompra.Value = DateTime.Now;
             this.txtUnidades.Clear();
+            this.txtCodigoLibro.Text = "0000000000";
         }
     }
 }
