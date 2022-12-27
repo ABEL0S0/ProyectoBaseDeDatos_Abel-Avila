@@ -23,7 +23,13 @@ namespace ProyectoBaseDeDatos_Abel_Avila
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
-        {                      
+        {
+            this.txtNombreLibro.Clear();
+            this.txtAutor.Clear();
+            this.txtFechaCompra.Clear();
+            this.txtPrecioCompra.Clear();
+            this.txtUnidades.Clear();
+            this.txtFechaCreacion.Clear();
             ProyectoBaseDeDatos_Abel_Avila.DATA_ACCess_OBJECT.LibrosDAO oEst =
                     new ProyectoBaseDeDatos_Abel_Avila.DATA_ACCess_OBJECT.LibrosDAO();
 
@@ -41,18 +47,13 @@ namespace ProyectoBaseDeDatos_Abel_Avila
                 this.txtFechaCreacion.Text = fila["FechaCreacion"].ToString();                
             }
             //tarea: muestre el mensaje adecuado, en caso que el estudiante no exista
-            if (this.txtNombreLibro.TextLength == (0) || this.txtAutor.TextLength == (0) || this.txtCodigoLibro.Text == "0000000000" || this.txtFechaCompra.TextLength == (0) || this.txtUnidades.TextLength == (0) || this.txtFechaCreacion.TextLength == (0))
+            if (this.txtNombreLibro.TextLength == (0) || this.txtAutor.TextLength == (0) || this.txtFechaCompra.TextLength == (0) || this.txtUnidades.TextLength == (0) || this.txtFechaCreacion.TextLength == (0)|| this.txtCodigoLibro.Text == "0000000000";)
             {
                 MessageBox.Show("El Libro buscado no Existe");
                 return;
             }           
-            this.txtNombreLibro.Clear();
-            this.txtAutor.Clear();
-            this.txtFechaCompra.Clear();
-            this.txtPrecioCompra.Clear();
-            this.txtUnidades.Clear();
-            this.txtFechaCreacion.Clear();
-            this.txtCodigoLibro.Text = "0000000000";
+           
+            
         }
     }
 }

@@ -220,6 +220,7 @@
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton3.Text = "Eliminar Libro";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripButton4
             // 
@@ -284,6 +285,7 @@
             this.eliminarLibroToolStripMenuItem.Name = "eliminarLibroToolStripMenuItem";
             this.eliminarLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarLibroToolStripMenuItem.Text = "Eliminar Libro";
+            this.eliminarLibroToolStripMenuItem.Click += new System.EventHandler(this.eliminarLibroToolStripMenuItem_Click);
             // 
             // modificarLibroToolStripMenuItem
             // 

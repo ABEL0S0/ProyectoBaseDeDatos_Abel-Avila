@@ -146,6 +146,7 @@
             this.txtNombreLibro.Location = new System.Drawing.Point(120, 66);
             this.txtNombreLibro.MaxLength = 60;
             this.txtNombreLibro.Name = "txtNombreLibro";
+            this.txtNombreLibro.ReadOnly = true;
             this.txtNombreLibro.Size = new System.Drawing.Size(166, 20);
             this.txtNombreLibro.TabIndex = 6;
             // 
@@ -154,6 +155,7 @@
             this.txtAutor.Location = new System.Drawing.Point(65, 105);
             this.txtAutor.MaxLength = 60;
             this.txtAutor.Name = "txtAutor";
+            this.txtAutor.ReadOnly = true;
             this.txtAutor.Size = new System.Drawing.Size(159, 20);
             this.txtAutor.TabIndex = 7;
             // 
@@ -162,6 +164,7 @@
             this.txtPrecioCompra.Location = new System.Drawing.Point(124, 138);
             this.txtPrecioCompra.MaxLength = 10;
             this.txtPrecioCompra.Name = "txtPrecioCompra";
+            this.txtPrecioCompra.ReadOnly = true;
             this.txtPrecioCompra.Size = new System.Drawing.Size(100, 20);
             this.txtPrecioCompra.TabIndex = 8;
             // 
@@ -169,6 +172,7 @@
             // 
             this.txtFechaCompra.Location = new System.Drawing.Point(124, 174);
             this.txtFechaCompra.Name = "txtFechaCompra";
+            this.txtFechaCompra.ReadOnly = true;
             this.txtFechaCompra.Size = new System.Drawing.Size(139, 20);
             this.txtFechaCompra.TabIndex = 9;
             // 
@@ -177,6 +181,7 @@
             this.txtUnidades.Location = new System.Drawing.Point(85, 206);
             this.txtUnidades.MaxLength = 10;
             this.txtUnidades.Name = "txtUnidades";
+            this.txtUnidades.ReadOnly = true;
             this.txtUnidades.Size = new System.Drawing.Size(100, 20);
             this.txtUnidades.TabIndex = 10;
             // 
@@ -184,6 +189,7 @@
             // 
             this.txtFechaCreacion.Location = new System.Drawing.Point(130, 236);
             this.txtFechaCreacion.Name = "txtFechaCreacion";
+            this.txtFechaCreacion.ReadOnly = true;
             this.txtFechaCreacion.Size = new System.Drawing.Size(133, 20);
             this.txtFechaCreacion.TabIndex = 11;
             // 
