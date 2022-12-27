@@ -230,6 +230,7 @@
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton4.Text = "Modificar Libro";
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // nuevoEstudianteToolStripMenuItem
             // 
@@ -267,7 +268,7 @@
             // 
             this.nuevoLibroToolStripMenuItem.Image = global::ProyectoBaseDeDatos_Abel_Avila.Properties.Resources.añadir_libro;
             this.nuevoLibroToolStripMenuItem.Name = "nuevoLibroToolStripMenuItem";
-            this.nuevoLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoLibroToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.nuevoLibroToolStripMenuItem.Text = "Nuevo Libro";
             this.nuevoLibroToolStripMenuItem.Click += new System.EventHandler(this.nuevoLibroToolStripMenuItem_Click);
             // 
@@ -275,7 +276,7 @@
             // 
             this.buscarLibroToolStripMenuItem.Image = global::ProyectoBaseDeDatos_Abel_Avila.Properties.Resources.buscar_libro;
             this.buscarLibroToolStripMenuItem.Name = "buscarLibroToolStripMenuItem";
-            this.buscarLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.buscarLibroToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.buscarLibroToolStripMenuItem.Text = "Buscar Libro";
             this.buscarLibroToolStripMenuItem.Click += new System.EventHandler(this.buscarLibroToolStripMenuItem_Click);
             // 
@@ -283,7 +284,7 @@
             // 
             this.eliminarLibroToolStripMenuItem.Image = global::ProyectoBaseDeDatos_Abel_Avila.Properties.Resources.eliminar_libro;
             this.eliminarLibroToolStripMenuItem.Name = "eliminarLibroToolStripMenuItem";
-            this.eliminarLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarLibroToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.eliminarLibroToolStripMenuItem.Text = "Eliminar Libro";
             this.eliminarLibroToolStripMenuItem.Click += new System.EventHandler(this.eliminarLibroToolStripMenuItem_Click);
             // 
@@ -293,6 +294,7 @@
             this.modificarLibroToolStripMenuItem.Name = "modificarLibroToolStripMenuItem";
             this.modificarLibroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modificarLibroToolStripMenuItem.Text = "Modificar Libro";
+            this.modificarLibroToolStripMenuItem.Click += new System.EventHandler(this.modificarLibroToolStripMenuItem_Click);
             // 
             // Menu
             // 
