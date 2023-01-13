@@ -1,0 +1,3 @@
+Calificación: 3.5/4
+
+Use nombres sin espacios en blanco para las carpetas
